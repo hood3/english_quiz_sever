@@ -10,7 +10,7 @@ const app = express(); // Invoke the express functionalities
 
 // Connect to my MongoDB Atlas database
 mongoose // Mongoose is an object document mapper for mapping a schema to mongodb
-    .connect('mongodb+srv://bhood:Sooners@hood-ehw1i.mongodb.net/test?retryWrites=true&w=majority', { // My database stored in my env variables
+    .connect(DATABASE, { // My database stored in my env variables
         useNewUrlParser: true, // To keep deprecated warnings from showing up in terminal
         useFindAndModify: false,
         useUnifiedTopology: true,
